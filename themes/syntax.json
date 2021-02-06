@@ -6,6 +6,10 @@
         {
             "scope": [
                 "*link*",
+                "meta.attribute.python",
+                "meta.function-call.arguments.python",
+                "meta.function-call.python",
+                "meta.member.access.python",
                 "*uri*",
                 "*url*",
                 "constant.character",
@@ -114,7 +118,7 @@
                 "text.html.markdown meta.attribute"
             ],
             "settings": {
-                "foreground": "#48ffc2"
+                "foreground": "#F92672"
             }
         },
         {
@@ -131,13 +135,15 @@
         {
             "scope": [
                 "comment",
+                "comment.line.number-sign.python",
+                "punctuation.definition.comment",
                 "storage.modifier.php",
                 "punctuation.definition.variable.php",
                 "storage.type",
                 "storage.modifier.async"
             ],
             "settings": {
-                "foreground": "#4f6d8c"
+                "foreground": "#75715E"
             }
         },
         {
@@ -155,7 +161,7 @@
                 "source.nginx variable"
             ],
             "settings": {
-                "foreground": "#6288a1"
+                "foreground": "#FD971F"
             }
         },
         {
@@ -205,11 +211,14 @@
         },
         {
             "scope": [
+                "meta.class.inheritance.python",
+                "meta.class.python",
                 "meta.function-call",
+                "meta.function",
                 "support.type.primitive.ts"
             ],
             "settings": {
-                "foreground": "#a074c4"
+                "foreground": "#A6E22E"
             }
         },
         {
@@ -283,7 +292,7 @@
                 "meta.function.echo.blade"
             ],
             "settings": {
-                "foreground": "#fda200"
+                "foreground": "#F92672"
             }
         },
         {
@@ -304,7 +313,8 @@
                 "code.log support.type"
             ],
             "settings": {
-                "foreground": "#ffdc11"
+                "foreground": "#66D9EF",
+                "fontStyle": "italic"
             }
         },
         {
@@ -317,7 +327,6 @@
                 "entity.name.function.php",
                 "entity.name.function.js",
                 "entity.name.function.ts",
-                "storage.type.php",
                 "support.class.js",
                 "support.class.ts",
                 "constant.numeric",
@@ -328,7 +337,6 @@
                 "meta.declaration",
                 "support.function.js",
                 "support.constant.property-value.css",
-                "punctuation.definition.comment",
                 "meta.function-call.js",
                 "support.function.magic.php",
                 "variable.other.directive.modifier.vue-html",
@@ -339,7 +347,7 @@
                 "code.log invalid"
             ],
             "settings": {
-                "foreground": "#ff4545"
+                "foreground": "#AE81FF"
             }
         },
         {
@@ -354,6 +362,15 @@
                 "constant.character.escape",
                 "meta.directive.v-.vue-html variable.other.readwrite.js",
                 "entity.name.tag.css"
+            ],
+            "settings": {
+                "fontStyle": "underline"
+            }
+        },
+        {
+            "scope": [
+                "meta.class.inheritance.python",
+                "meta.class.python"
             ],
             "settings": {
                 "fontStyle": "underline"
